@@ -6,10 +6,6 @@ This repository is created for learning and practicing basic Git and GitHub comm
 Remote repository:  
 [Git-GitHub](https://github.com/thevishingh/Git-GitHub.git)
 
-## 💻 Local Folder
-Project folder:  
-`D:\thevishingh\github`
-
 ## 🎯 Purpose
 This repo is used to practice:
 - Git initialization
