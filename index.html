@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Basic Sidebar</title>
+  <style>
+    body {
+      margin: 0;
+      font-family: Arial, sans-serif;
+      display: flex;
+    }
+    nav {
+      width: 220px;
+      background: #f4f4f4;
+      padding: 20px;
+      box-sizing: border-box;
+      height: 100vh;
+    }
+    nav ul {
+      list-style: none;
+      padding: 0;
+      margin: 0;
+    }
+    nav li {
+      margin-bottom: 12px;
+    }
+    nav a {
+      text-decoration: none;
+      color: #333;
+      display: block;
+      padding: 8px 10px;
+      border-radius: 4px;
+    }
+    nav a:hover {
+      background: #ddd;
+    }
+    main {
+      flex: 1;
+      padding: 30px;
+    }
+  </style>
+</head>
+<body>
+  <nav>
+    <h2>Sidebar</h2>
+    <ul>
+      <li><a href="#home">Home</a></li>
+      <li><a href="#about">About</a></li>
+      <li><a href="#services">Services</a></li>
+      <li><a href="#contact">Contact</a></li>
+    </ul>
+  </nav>
+  <main>
+    <h1>Welcome</h1>
+    <p>This is a basic sidebar built using HTML, links, and a list.</p>
+  </main>
+</body>
+</html>

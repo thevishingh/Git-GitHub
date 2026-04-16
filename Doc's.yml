@@ -1,0 +1,164 @@
+# Git & GitHub Initial Project Documentation
+
+## 1. Introduction
+
+Git is a **version control system** used to track changes in a project’s codebase. GitHub is a **cloud platform** that hosts Git repositories and allows developers to collaborate, store code, and manage project versions.
+
+This document explains the **basic workflow used when starting a new project** and managing code using Git and GitHub.
+
+---
+
+# 2. Creating a New Project
+
+A project begins by creating a folder for the application and initializing Git inside it.
+
+Initializing Git creates a hidden `.git` directory that stores all version history and configuration related to the project.
+
+### Steps
+
+1. Create a project directory.
+2. Navigate into the project directory.
+3. Initialize Git.
+
+Once initialized, Git starts tracking changes made to files within the project.
+
+---
+
+# 3. README File
+
+The `README.md` file is the **main documentation file of the repository**. It explains the purpose of the project and provides instructions for developers.
+
+### Purpose of README
+
+* Describe what the project does
+* Explain how to install dependencies
+* Provide instructions to run the project
+* List project features
+* Provide contribution guidelines
+
+### Typical Sections in a README
+
+* Project title
+* Project description
+* Installation instructions
+* Usage instructions
+* Features
+* Technologies used
+* Contribution guidelines
+
+The README file appears on the **homepage of the GitHub repository** and is usually written in Markdown format.
+
+---
+
+# 4. Git Add
+
+The `add` command is used to **stage changes** before committing them.
+
+When files are modified or created, Git does not automatically include them in the next commit. Instead, the developer must select which files should be part of the commit.
+
+### Purpose
+
+* Prepare files to be included in the next commit
+* Move changes from the working directory to the staging area
+
+This step allows developers to control exactly **which changes are saved in each version**.
+
+---
+
+# 5. Git Commit
+
+A commit represents a **snapshot of the project at a specific point in time**.
+
+Each commit includes:
+
+* The changes made
+* The author information
+* A timestamp
+* A commit message describing the update
+
+### Purpose
+
+* Save the current state of the project
+* Maintain version history
+* Track progress and updates
+
+Clear commit messages help other developers understand **what changes were made and why**.
+
+---
+
+# 6. Branch
+
+A branch is used to create **separate lines of development**.
+
+Instead of modifying the main codebase directly, developers create branches to work on features, bug fixes, or experiments.
+
+### Benefits of Branching
+
+* Prevents breaking the main project
+* Allows multiple developers to work simultaneously
+* Makes feature development isolated and organized
+
+### Common Branch Types
+
+| Branch         | Purpose                                |
+| -------------- | -------------------------------------- |
+| main / master  | Stable production-ready code           |
+| feature branch | Development of new features            |
+| bugfix branch  | Fixing issues in the project           |
+| release branch | Preparing a new version for deployment |
+
+Once development is complete, branches are usually merged back into the main branch.
+
+---
+
+# 7. Remote Repository
+
+A remote repository is a **version of the project hosted on a server**, such as GitHub.
+
+Connecting a local repository to a remote repository allows developers to:
+
+* Share code with others
+* Backup the project online
+* Collaborate with teams
+
+After linking the local repository with GitHub, developers can synchronize changes between the local system and the remote repository.
+
+---
+
+# 8. Push
+
+The push operation sends **local commits to the remote repository**.
+
+This uploads the latest project changes to GitHub so other team members can access them.
+
+### Purpose
+
+* Share updates with the team
+* Backup the project online
+* Maintain synchronized project versions
+
+After pushing, the code becomes visible in the GitHub repository.
+
+---
+
+# 9. Basic Git Workflow
+
+The general workflow used by developers when working with Git is:
+
+1. Make changes to project files.
+2. Stage the changes.
+3. Commit the changes with a descriptive message.
+4. Push the commits to the remote repository.
+
+This process ensures that the project history remains organized and that every update is properly tracked.
+
+---
+
+# 10. Conclusion
+
+Git and GitHub provide an efficient system for managing software development projects. By using version control, developers can safely track changes, collaborate with teams, and maintain a reliable project history.
+
+A structured workflow involving **README documentation, commits, branches, and remote repositories** helps maintain clean and scalable project development practices.
+
+---
+
