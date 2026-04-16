@@ -316,3 +316,96 @@ Purpose
 
 ---
 
+git branch:
+
+The git branch command is used to create, view, or manage branches in a repository.
+
+A branch represents a separate line of development in a project. It allows developers to work on new features, fixes, or experiments without affecting the main code.
+
+---
+
+Concept
+
+In Git, the main branch (often called main or master) usually contains the stable version of the project.
+
+When developers want to add a new feature or fix a bug, they create a new branch. All changes are made in that branch. Once the work is complete and tested, the branch can be merged back into the main branch.
+
+This helps keep the main project stable while development continues.
+
+---
+
+Purpose
+
+* Work on new features without breaking the main project
+* Allow multiple developers to work on different tasks at the same time
+* Keep project development organized
+
+---
+
+Simple Example of How It Is Used
+
+1. The main branch contains stable code.
+2. A developer creates a feature branch to add a new feature.
+3. The developer works on that branch.
+4. After testing, the changes are merged back into the main branch.
+
+---
+
+Simple Way to Understand It
+
+Think of a branch like a copy of the project where you can safely make changes.
+Once everything works correctly, those changes are added back to the main project.
+
+---
+
+
+### Creating a New Branch
+
+There are multiple Git commands that can be used to create a new branch. All of them create a branch from the current commit, but they behave slightly differently depending on whether they also switch to the branch.
+
+---
+
+#### git checkout -b `<name>`
+
+This command creates a new branch and immediately switches to it.
+
+It combines two actions in one step:
+creating the branch and making it the active branch for development.
+
+Purpose
+
+* Quickly create and start working on a new branch
+
+---
+
+#### git branch `<name>`
+
+This command only creates a new branch, but it does not switch to it.
+
+After creating the branch, you will still remain on the current branch until you manually switch to the new one.
+
+Purpose
+
+* Create a branch without changing your current working branch
+
+---
+
+#### git switch -c `<name>`
+
+This command creates a new branch and switches to it, similar to `git checkout -b`.
+
+The `git switch` command was introduced to make branch switching clearer and easier to understand compared to `git checkout`, which has multiple purposes.
+
+Purpose
+
+* Create and move to a new branch using a more modern Git command.
+
+---
+
+### Simple Understanding
+
+* git branch → create branch only
+* git checkout -b → create branch + switch
+* git switch -c → create branch + switch (newer command)
+
+---
