@@ -409,3 +409,28 @@ Purpose
 * git switch -c → create branch + switch (newer command)
 
 ---
+
+git merge:
+
+The git merge command is used to combine changes from one branch into another branch.
+
+It is commonly used when development work in a feature branch is completed and needs to be added back to the main branch.
+
+---
+
+Concept
+
+When a merge is performed, Git takes the commits from the selected branch and integrates them into the current branch. This allows the work done in separate branches to become part of the main project.
+
+---
+Purpose
+
+* Combine changes from different branches
+* Integrate completed features into the main project
+* Keep development organized while working on multiple branches
+
+---
+
+Simple Understanding
+
+Developers create branches to work on features or fixes. Once the work is finished, git merge is used to bring those changes back into the main branch.
