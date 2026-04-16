@@ -365,6 +365,51 @@ main {
   align-self: flex-start;
 }
 
+/* Form Messages */
+.form-message {
+  padding: 16px;
+  border-radius: 8px;
+  margin-bottom: 10px;
+  display: none;
+  font-weight: 500;
+}
+
+.form-message.success {
+  display: block;
+  background: #d4edda;
+  border: 2px solid #28a745;
+  color: #155724;
+  animation: slideDown 0.3s ease;
+}
+
+.form-message.error {
+  display: block;
+  background: #f8d7da;
+  border: 2px solid #dc3545;
+  color: #721c24;
+  animation: slideDown 0.3s ease;
+}
+
+.form-message.error ul {
+  margin: 10px 0 0 0;
+  padding-left: 20px;
+}
+
+.form-message.error li {
+  margin-bottom: 5px;
+}
+
+@keyframes slideDown {
+  from {
+    opacity: 0;
+    transform: translateY(-10px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
 /* Scrollbar Styling */
 nav::-webkit-scrollbar {
   width: 6px;

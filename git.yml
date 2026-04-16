@@ -434,3 +434,68 @@ Purpose
 Simple Understanding
 
 Developers create branches to work on features or fixes. Once the work is finished, git merge is used to bring those changes back into the main branch.
+
+---
+
+git branch -D `<name>`:
+
+The git branch -D `<name>` command is used to delete a branch from the local repository.
+
+This command forcefully removes the branch, even if it has changes that have not been merged.
+
+---
+
+Purpose
+
+* Remove branches that are no longer needed
+* Clean up completed feature or test branches
+
+---
+
+Simple Understanding
+
+After a feature is completed and merged into the main branch, the extra branch can be deleted to keep the repository clean and organized.
+
+Note: This command deletes the branch permanently from the local repository.
+
+--- 
+
+Pull Request (PR):
+
+A Pull Request (PR) is a feature used in platforms like GitHub to propose changes from one branch to another branch.
+
+It allows developers to request that their changes be reviewed and merged into another branch, usually the main branch of a project.
+
+---
+
+Concept
+
+When a developer finishes working on a feature or fix in a branch, they create a pull request to inform the team that the work is ready to be reviewed.
+
+Other developers can then:
+
+* Review the code
+* Suggest improvements
+* Discuss the changes
+* Approve or request modifications
+
+After approval, the changes can be merged into the target branch.
+
+---
+
+Purpose
+
+* Enable code review before merging changes
+* Maintain code quality and collaboration
+* Track discussions related to a specific change
+
+---
+
+Simple Understanding
+
+A Pull Request is basically a request to merge your branch into another branch, usually after your work is completed.
+
+It helps teams review and approve code before it becomes part of the main project.
+
+---
+
