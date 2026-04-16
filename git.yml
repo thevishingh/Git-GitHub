@@ -255,3 +255,64 @@ Purpose
 
 ---
 
+git reset --hard:
+
+The git reset --hard command is used to move the current branch (HEAD) to a specific commit and discard all changes in the staging area and working directory.
+
+After running this command, the project will return to the exact state of that commit, and any uncommitted changes will be permanently removed.
+
+Purpose
+
+* Completely undo commits and changes
+* Reset the project to a previous clean state.
+
+---
+
+git status:
+
+The git status command shows the current state of the repository.
+
+It displays which files have been modified, staged for commit, or are untracked.
+
+Purpose
+
+* Check what changes have been made in the project
+* See which files are ready to be committed
+* Identify files that Git is not currently tracking.
+
+--- 
+
+Staging Multiple Files:
+
+Staging multiple files means adding several files to the staging area at the same time so they can be included in the next commit.
+
+The staging area is an intermediate step between the working directory and the commit history. It allows developers to choose exactly which changes should be part of the next commit.
+
+Concept
+
+When multiple files are modified in a project, developers may want to commit them together if they belong to the same feature, fix, or update. By staging multiple files, those related changes can be grouped into a single commit.
+
+Purpose
+
+* Include multiple related files in one commit
+* Control what changes are committed
+* Keep commit history organized and meaningful
+
+So the concept is simply about selecting multiple files before committing them.
+
+---
+
+.gitignore:
+
+The .gitignore file is used to tell Git which files or folders should not be tracked by the repository.
+
+Sometimes a project contains files that should not be included in version control, such as temporary files, build files, environment variables, or dependency folders. The `.gitignore` file prevents these files from being added or committed to the repository.
+
+Purpose
+
+* Prevent unnecessary or sensitive files from being tracked
+* Keep the repository clean and organized
+* Avoid uploading system or build files to GitHub.
+
+---
+
