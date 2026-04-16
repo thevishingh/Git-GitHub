@@ -12,8 +12,8 @@ A practical repo to master Git/GitHub basics. Watch the videos, do the challenge
 
 ## 🛠 Quick Setup
 ```bash
-git clone https://github.com/yourusername/git-crash-course.git
-cd git-crash-course
+https://github.com/thevishingh/Git-GitHub.git
+cd Git-GitHub.git
 ```
 
 ## 📋 Follow-Along Challenges
