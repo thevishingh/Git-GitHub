@@ -499,3 +499,69 @@ It helps teams review and approve code before it becomes part of the main projec
 
 ---
 
+## GitHub Actions (Simple Explanation)
+
+GitHub Actions is a tool that helps you automate tasks in your repository.
+It can automatically build, test, or deploy your code whenever something happens in the repo (like pushing code or creating a pull request).
+
+---
+
+### Workflow
+
+A workflow is an automated process that runs in your repository.
+
+It contains instructions for what should happen when a specific event occurs.
+
+Example:
+When you push code → run tests automatically.
+
+---
+
+### Job
+
+A job is a group of tasks that run together in the same environment.
+
+A workflow can have multiple jobs, and they can run one after another or at the same time.
+
+---
+
+### Step
+
+A step is a single task inside a job.
+
+Examples:
+
+* Install dependencies
+* Run tests
+* Build the project
+
+---
+
+### Very Simple Structure
+
+
+Workflow
+   └── Job
+         └── Step
+
+
+Example idea:
+
+
+Workflow: Run tests on push
+   Job: Test project
+      Step 1: Install Node.js
+      Step 2: Install dependencies
+      Step 3: Run tests
+
+
+---
+
+💡 One line way to remember:
+
+* Workflow → complete automation process
+* Job → group of tasks
+* Step → single command/task
+
+---
+
